@@ -32,7 +32,10 @@ A human-friendly CLI HTTP client — far more readable than `curl` for quick API
 ```bash
 # Install
 brew install httpie          # macOS
-pip install httpie           # cross-platform
+
+sudo apt install pipx -y
+pipx ensurepath
+pipp install httpie           # Linux
 
 # Examples
 http GET localhost:8080/api/users
