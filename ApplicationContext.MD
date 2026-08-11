@@ -8,7 +8,8 @@ Let’s go deep into Spring Boot internals and see how `ApplicationContext` **is
 
 Every Spring Boot app starts with:
 
-```@SpringBootApplication
+```
+@SpringBootApplication
 public class MyApplication {
 
     public static void main(String[] args) {
@@ -48,9 +49,12 @@ Spring loads configuration from:
 ```
 application.properties
 application.yml
-environment variables
+OS Environment variables
 command-line arguments
+.env
+Default values
 ```
+Spring gathers them into a single object called:
 
 Example:
 
